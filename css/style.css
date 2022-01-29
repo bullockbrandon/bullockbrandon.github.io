@@ -1,35 +1,7 @@
-/*-------------------------------------------------
-=  Table of Css
-
-1.Reset
-2.General
-3.Main Settings
-4.Main Navigation
-5.FullPage
-6.Main content
-7.Blog Page
-8.Navigation
-9.Page
-10.Post
-11.Project
-12.Contact Form
-13.Footer
-14.Elements
-15.Loader
-16.Magnific popup
-17.OWL
-18.Animations
-
--------------------------------------------------*/
-/*-------------------------------------------------
-=  Import Google Fonts */
 @import url("https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
-/*-------------------------------------------------*/
-/*-------------------------------------------------*/
-/* =  1.Reset
-/*-------------------------------------------------*/
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -73,9 +45,6 @@ a:focus {
   text-decoration: none;
 }
 
-/*-------------------------------------------------*/
-/* =  2.General
-/*-------------------------------------------------*/
 body {
   font: 100% "Product Sans", sans-serif;
   color: white;
@@ -127,13 +96,6 @@ h2, h3 {
     font-size: 50px;
     line-height: 60px;
   }
-}
-
-h4 {
-  font-size: 40px;
-  line-height: 50px;
-  font-weight: 700;
-  margin-bottom: 25px;
 }
 
 a {
@@ -213,56 +175,6 @@ p.small-height {
 
 [class~="color2"] {
   color: #0097A7 !important;
-}
-
-/* class black: set font with black color */
-[class~="black"] {
-  color: #000000 !important;
-}
-
-/* class grey: set font with grey color */
-[class~="grey"] {
-  color: rgb(128, 128, 128) !important;
-}
-
-/* class grey-light: set font with light grey color */
-[class~="grey-light"] {
-  color: #d1d2d3 !important;
-}
-
-/* class grey-dark: set font with dark grey color */
-[class~="grey-dark"] {
-  color: #6E6E6E !important;
-}
-
-/* class uppercase: set font uppercase */
-[class~="uppercase"] {
-  text-transform: uppercase;
-}
-
-/* class uppercase: set font underline */
-[class~="underline"] {
-  text-decoration: underline;
-}
-
-/* class font-100: set font weight 100 */
-[class~="font-100"] {
-  font-weight: 100 !important;
-}
-
-/* class font-300: set font weight 300 */
-[class~="font-300"] {
-  font-weight: 300 !important;
-}
-
-/* class font-400: set font weight 400 */
-[class~="font-400"] {
-  font-weight: 400 !important;
-}
-
-/* class font-600: set font weight 600 */
-[class~="font-600"] {
-  font-weight: 600 !important;
 }
 
 /* class vertical-align: vertical align */
@@ -1828,185 +1740,6 @@ section#projects img {
 section#projects img:hover {
   box-shadow: 0 0 38px rgba(0, 0, 0, 0.8), 0 0 12px rgba(0, 0, 0, 0.8);
   transition: all .4s ease;
-}
-
-@media screen and (max-width: 1199px) {
-  section#works .first-project {
-    margin-left: 66.66666667%;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  section#works .first-project {
-    margin-left: 0;
-  }
-}
-
-section#works figure {
-  position: relative;
-  z-index: 10;
-}
-
-section#works figure:after {
-  content: '';
-  width: 80px;
-  height: 70%;
-  background-color: rgba(217, 217, 217, 0.4);
-  position: absolute;
-  top: -50px;
-  right: 30px;
-}
-
-@media screen and (max-width: 480px) {
-  section#works figure:after {
-    width: 60px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  section#works figure:after {
-    width: 50px;
-  }
-}
-
-section#works figure.line:after {
-  content: '';
-  width: 80%;
-  height: 80px;
-  background-color: rgba(217, 217, 217, 0.4);
-  position: absolute;
-  top: 50px;
-  left: -50px;
-}
-
-@media screen and (max-width: 480px) {
-  section#works figure.line:after {
-    height: 60px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  section#works figure.line:after {
-    height: 50px;
-  }
-}
-
-section#works figure em {
-  position: absolute;
-  top: 77px;
-  left: 25px;
-  font-family: "Inconsolata", monospace;
-  font-size: 18px;
-  line-height: 28px;
-  color: white;
-  z-index: 5;
-  display: inline-block;
-  opacity: 0;
-  -webkit-transform: translate(0px, 5px);
-      -ms-transform: translate(0px, 5px);
-          transform: translate(0px, 5px);
-  transition: all .4s ease;
-}
-
-@media screen and (max-width: 480px) {
-  section#works figure em {
-    top: 66px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  section#works figure em {
-    top: 61px;
-    left: 15px;
-  }
-}
-
-section#works figure em:after {
-  content: "\f3d6";
-  font-family: "Ionicons";
-  margin-left: 10px;
-  position: absolute;
-  top: 1px;
-}
-
-section#works figure em.line {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  left: inherit;
-  right: 15px;
-}
-
-@media screen and (max-width: 480px) {
-  section#works figure em.line {
-    right: 5px;
-  }
-}
-
-@media screen and (max-width: 410px) {
-  section#works figure em.line {
-    right: 0px;
-  }
-}
-
-section#works figcaption {
-  font-size: 60px;
-  line-height: 80px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-top: -90px;
-  margin-left: 25px;
-  position: relative;
-  z-index: 4;
-  font-family: "Product Sans", sans-serif;
-}
-
-@media screen and (max-width: 480px) {
-  section#works figcaption {
-    font-size: 40px;
-    line-height: 50px;
-    margin-top: -49px;
-  }
-}
-
-@media screen and (max-width: 991px) {
-  section#works p {
-    padding-top: 50px;
-  }
-}
-
-section#works .single-project {
-  position: relative;
-}
-
-section#works .single-project a.link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-}
-
-section#works .single-project:hover figure em {
-  opacity: 1;
-  transition: all .4s ease;
-}
-
-section#works .single-project:hover figure em:not(.line) {
-  -webkit-transform: translate(0px, 0px);
-      -ms-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
-}
-
-section#works .single-project:hover figure img {
-  opacity: .1;
-}
-
-@media screen and (max-width: 991px) {
-  section#works .col-md-offset-2 {
-    padding: 50px 0;
-  }
 }
 
 @media screen and (min-width: 1024px) {
